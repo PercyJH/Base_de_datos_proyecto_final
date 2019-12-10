@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registrate | Iniciar Sesión</title>
+  <link rel="icon" href="imagens/Utiles/Logo.ico">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body class="cuerpo" style="background-image: url(wpopcorn.png);">
+    <header>
+        <a href="Index.html">
+          <div class="atras"><i class="fas fa-arrow-left"></i></div>
+        </a>
+        <a class="logo">
+          <div><img src="imagens/Utiles/Logo.png" height="200"alt=""></div>
+        </a>
+      </header>   
+    <h2>¡Rellena el formulario y se parte de nostros!</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form class="registro" action="login/crear-cuenta.php" method="post">
+          <h1>Regístrate</h1>
+          <div class="social-container">
+            <a href="https://www.facebook.com/anderson.almeydatorres" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="https://cdn.memegenerator.es/imagenes/memes/full/22/2/22023224.jpg" class="social"><i class="fab fa-instagram"></i></a>
+          </div>
+          <span>Es rápido y fácil, hasta Almeyda puede.</span>
+          <input type="text" placeholder="Nombre completo" name="nombre" />
+          <input type="email" placeholder="Correo electrónico" name="email" />
+          <input type="password" placeholder="Contraseña" name="password"/>
+          <button class="accederbotom" type="submit">REGISTRAR</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form class="iniciosesion" action="login/verificar-login.php" method="post">
+          <h1>Inicia sesión ¡Durazno!</h1>
+          <div class="social-container">
+            <a href="https://www.facebook.com/anderson.almeydatorres" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/channel/UCkS3rZ53w8Wj4FdPTtKZcqg?view_as=subscriber" class="social"><i class="fab fa-youtube"></i></a>
+            <a href="https://cdn.memegenerator.es/imagenes/memes/full/22/2/22023224.jpg" class="social"><i class="fab fa-instagram"></i></a>
+          </div>
+          <span>usa tu cuenta de peliculón</span>
+          <input type="email" name="email" placeholder="Correo electrónico" />
+          <input type="password" name="password" placeholder="Contraseña" />
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <button class="accederbotom" type="submit">ACCEDER</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Ya tengo cuenta!</h1>
+            <p>Ahora eres un durazno, inicia sesión y vive tu experiencia con nostros.</p>
+            <button class="ghost" id="signIn">Iniciar Sesión</button> <!--SigIn ghost BOTON FANTASMA-->
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1 class="registrate">Registrate</h1>
+            <h1>Hola, PeliHincha!</h1>
+            <p>¿Te gusta mucho las pelis? <br/> Conviertete en un Durazno y vive la mejor experiencia del cine.</p>
+            <button class="ghost" id="signUp">No se diga más</button>  <!--SigUp ghost BOTON FANTASMA-->
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<footer>
+  </footer>
+  <script src="js/login.js"></script>
+</html>
